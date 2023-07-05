@@ -1,0 +1,80 @@
+[
+	{
+		"Id": "078b1ddc-15b2-49cd-b8c7-e1bfc972bb05",
+		"Title": "Trial",
+		"Author": "Osoro",
+		"Content": "this is some dummy article.",
+		"Comments": [
+			{
+				"Id": "ada84fc0-aa62-4e1a-a44b-5ff8b3a585ba",
+				"Name": "Osoro",
+				"Comment": "Trial comment.",
+				"CreatedAt": "2023-07-05T13:06:49.664212+03:00",
+				"DeletedAt": "2023-07-05T14:10:31.370495+03:00"
+			},
+			{
+				"Id": "17e68c2a-ea92-4d4a-9d32-8e9488c0394f",
+				"Name": "Muse",
+				"Comment": "Some other dumb co0mment",
+				"CreatedAt": "2023-07-05T13:52:43.003786+03:00",
+				"DeletedAt": "0001-01-01T00:00:00Z"
+			},
+			{
+				"Id": "65880283-2fb3-4779-a55b-9e29c7ba2cc2",
+				"Name": "Jogn Doe",
+				"Comment": "This is another comment.",
+				"CreatedAt": "2023-07-05T14:26:55.734238+03:00",
+				"DeletedAt": "2023-07-05T14:26:59.950195+03:00"
+			},
+			{
+				"Id": "60f91dca-7fee-4309-80ae-b244ada4cf6e",
+				"Name": "test",
+				"Comment": "test",
+				"CreatedAt": "2023-07-05T15:16:58.654805+03:00",
+				"DeletedAt": "2023-07-05T15:20:03.687547+03:00"
+			},
+			{
+				"Id": "5a19bc31-8e96-4482-916b-38ca871d39ab",
+				"Name": "test",
+				"Comment": "test",
+				"CreatedAt": "2023-07-05T15:19:12.578029+03:00",
+				"DeletedAt": "0001-01-01T00:00:00Z"
+			},
+			{
+				"Id": "a5870c89-b14b-420a-ba8a-1004b79b4912",
+				"Name": "test",
+				"Comment": "test",
+				"CreatedAt": "2023-07-05T15:19:30.686988+03:00",
+				"DeletedAt": "0001-01-01T00:00:00Z"
+			},
+			{
+				"Id": "e84ed2bb-b054-46bf-aee0-505f14a0b6c2",
+				"Name": "test",
+				"Comment": "test",
+				"CreatedAt": "2023-07-05T15:20:03.68184+03:00",
+				"DeletedAt": "0001-01-01T00:00:00Z"
+			}
+		]
+	},
+	{
+		"Author": "test",
+		"Comments": null,
+		"Content": "test",
+		"Id": "e3a30287-4f58-4528-8345-b4b12bd3b5db",
+		"Title": "test"
+	},
+	{
+		"Author": "test",
+		"Comments": null,
+		"Content": "test",
+		"Id": "fb7e1501-b690-479a-9f59-995c88218b84",
+		"Title": "test"
+	},
+	{
+		"Author": "test",
+		"Comments": null,
+		"Content": "test",
+		"Id": "c3cb61de-f77d-44d5-b02f-39acddb94dd6",
+		"Title": "test"
+	}
+]

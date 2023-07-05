@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{.Title}}</title>
+</head>
+
+<body>
+    <section>
+        <h1>{{.Title}}</h1>
+        <p>{{.Content}}</p>
+        <p>{{.Author}}</p>
+    </section>
+
+
+    <section>
+        <h4>List of Comments</h4>
+        {{if .Comments}}
+        <script>
+            // delete comment script
+            const deleteComment = async (article_id, id) => {
+                const res = await fetch(`/comment?article_id=${article_id}&id=${id}`, {
+                    method: 'DELETE'
+                })
+                if (res.status === 200) {
+                    window.location.reload()
+                }
+            }
+        </script>
+        <ul>
+            {{ $article_id := .Id }}
+            {{range $val := .Comments}}
+            <li>
+                {{ if isDeleted $val.DeletedAt}}
+                <p style="color:red;">Comment has been deleted</p>
+                {{else}}
+                <p>Name: {{$val.Name}}</p>
+                <p>Comment: {{$val.Comment}}</p>
+                <button onclick={{jsCallOp2 "deleteComment" $article_id $val.Id}}>Delete Comment</button>
+                {{end}}
+            </li>
+            {{end}}
+        </ul>
+        {{else}}
+        <li>No comments found</li>
+        {{end}}
+    </section>
+
+    <section>
+        <section>
+            <h2>Make a Comment</h2>
+            <form action="/comment?article_id={{.Id}}" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Submit Comment</button>
+            </form>
+        </section>
+    </section>
+
+</body>
+
+</html>

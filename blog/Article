@@ -1,0 +1,31 @@
+[
+	{
+		"Id": "078b1ddc-15b2-49cd-b8c7-e1bfc972bb05",
+		"Title": "Trial",
+		"Author": "Osoro",
+		"Content": "this is some dummy article.",
+		"Comments": [
+			{
+				"Id": "ada84fc0-aa62-4e1a-a44b-5ff8b3a585ba",
+				"Name": "Osoro",
+				"Comment": "Trial comment.",
+				"CreatedAt": "2023-07-05T13:06:49.664212+03:00",
+				"DeletedAt": "2023-07-05T14:10:31.370495+03:00"
+			},
+			{
+				"Id": "17e68c2a-ea92-4d4a-9d32-8e9488c0394f",
+				"Name": "Muse",
+				"Comment": "Some other dumb co0mment",
+				"CreatedAt": "2023-07-05T13:52:43.003786+03:00",
+				"DeletedAt": "0001-01-01T00:00:00Z"
+			},
+			{
+				"Id": "65880283-2fb3-4779-a55b-9e29c7ba2cc2",
+				"Name": "Jogn Doe",
+				"Comment": "This is another comment.",
+				"CreatedAt": "2023-07-05T14:26:55.734238+03:00",
+				"DeletedAt": "2023-07-05T14:26:59.950195+03:00"
+			}
+		]
+	}
+]
